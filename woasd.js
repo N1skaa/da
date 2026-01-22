@@ -11,7 +11,7 @@ console.log(typeof true);
 console.log(typeof false); 
 
 // 4
-// typeof null => "object"
+//  object
 
 // 5
 console.log("15" + 1); 
@@ -33,3 +33,4 @@ console.log(num);
 function isNumber(v) {
   return typeof v === "number" && !Number.isNaN(v);
 }
+
