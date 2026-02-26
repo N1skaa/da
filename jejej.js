@@ -1,7 +1,7 @@
 // 1. Базовый срез
 let str1 = "JavaScript";
 
-console.log(str1.slice(4)); // берём часть строки с 4 индекса → "Script"
+console.log(str1.slice(4)); // берём часть строки с 4 индекса
 
 
 // 2. Проверка начала и конца
