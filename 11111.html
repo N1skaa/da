@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5 задач</title>
+</head>
+<body>
+    <!-- Задача 1: Изменение текста -->
+    <h1 id="title">Привет!</h1>
+
+    <!-- Задача 2: Подсчёт элементов -->
+    <p>Первый параграф</p>
+    <p>Второй параграф</p>
+    <p>Третий параграф</p>
+
+    <!-- Задача 3: Изменение атрибутов -->
+    <a id="myLink">Перейти</a>
+
+    <!-- Задача 4: Стилизация -->
+    <p>Первый параграф для стилизации</p>
+    <p>Второй параграф</p>
+    <p>Третий параграф</p>
+
+    <!-- Задача 5: Изменение картинки -->
+    <img id="myImage" src="https://via.placeholder.com/150" alt="Картинка">
+
+    <script>
+        // Задача 1: Изменение текста
+        document.getElementById('title').textContent = 'Добро пожаловать!';
+
+        // Задача 2: Подсчёт элементов
+        const paragraphs = document.getElementsByTagName('p');
+        alert('Количество параграфов: ' + paragraphs.length);
+
+        // Задача 3: Изменение атрибутов
+        const link = document.getElementById('myLink');
+        link.href = 'https://google.com';
+        link.target = '_blank';
+        link.textContent = 'Перейти на Google';
+
+        // Задача 4: Стилизация
+        const firstParagraph = document.getElementsByTagName('p')[3]; // 4-й параграф (счет с 0)
+        firstParagraph.style.color = 'red';
+        firstParagraph.style.fontSize = '20px';
+
+        // Задача 5: Изменение картинки
+        const image = document.getElementById('myImage');
+        image.src = 'https://via.placeholder.com/300/ff0000/ffffff?text=Новая+картинка';
+    </script>
+</body>
+</html>
